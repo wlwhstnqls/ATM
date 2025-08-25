@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class RealCash : MonoBehaviour
+public class Money : MonoBehaviour
 {
-    public int Money;
+   
     public Text MoneyText;
 
-    void Start()
+    public void SetMoney(int target)
     {
-        string UserMoney = string.Format("{0:N0}", Money);
+        string UserMoney = string.Format("{0:N0}",target);
         MoneyText.text = UserMoney;
     }
 }
